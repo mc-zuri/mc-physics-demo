@@ -16,9 +16,11 @@ npm run setup
 npm start
 ```
 
-Then open http://localhost:3000 and turn on **Options → Controls → Physics → Native Physics (WebAssembly)**, or open
-http://localhost:3000/?sp=1&setting=nativePhysics:true for a singleplayer world with it on. It applies from the next
-connect; in the browser console `bot.physicsEngine.constructor.name` is `NativePhysics` (`BotcraftPhysics` with it off).
+Then open http://localhost:3000 and pick the engine with the main menu's **Physics** button (also in **Options →
+Controls → Physics**): **Physics Utils** (mineflayer-physics-utils, the default) or **Native (Wasm)**
+(minecraft-physics-native). It applies from the next connect; switched in game, it offers the reconnect.
+`http://localhost:3000/?sp=1&setting=physicsEngine:"native"` opens a singleplayer world on the native engine. In the
+browser console `bot.physicsEngine.constructor.name` is `NativePhysics` (`BotcraftPhysics` on Physics Utils).
 
 `npm run setup` installs and builds every folder the client takes from, in order (`scripts/setup.mjs`), each with the
 pnpm version it pins.
