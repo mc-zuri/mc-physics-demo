@@ -1,0 +1,1543 @@
+{
+    "latest": {
+        "suSv": 0.03125,
+        "tileSize": 16,
+        "width": 512,
+        "height": 512,
+        "textures": {
+            "footprint": {
+                "u": 0,
+                "v": 0,
+                "tileIndex": 0
+            },
+            "particles": {
+                "u": 0.03125,
+                "v": 0,
+                "tileIndex": 1
+            },
+            "angry": {
+                "u": 0,
+                "v": 0.03125,
+                "tileIndex": 32
+            },
+            "big_smoke_0": {
+                "u": 0.03125,
+                "v": 0.03125,
+                "tileIndex": 33
+            },
+            "big_smoke_1": {
+                "u": 0.0625,
+                "v": 0,
+                "tileIndex": 2
+            },
+            "big_smoke_10": {
+                "u": 0.09375,
+                "v": 0,
+                "tileIndex": 3
+            },
+            "big_smoke_11": {
+                "u": 0.0625,
+                "v": 0.03125,
+                "tileIndex": 34
+            },
+            "big_smoke_2": {
+                "u": 0.09375,
+                "v": 0.03125,
+                "tileIndex": 35
+            },
+            "big_smoke_3": {
+                "u": 0,
+                "v": 0.0625,
+                "tileIndex": 64
+            },
+            "big_smoke_4": {
+                "u": 0,
+                "v": 0.09375,
+                "tileIndex": 96
+            },
+            "big_smoke_5": {
+                "u": 0.03125,
+                "v": 0.0625,
+                "tileIndex": 65
+            },
+            "big_smoke_6": {
+                "u": 0.03125,
+                "v": 0.09375,
+                "tileIndex": 97
+            },
+            "big_smoke_7": {
+                "u": 0.0625,
+                "v": 0.0625,
+                "tileIndex": 66
+            },
+            "big_smoke_8": {
+                "u": 0.0625,
+                "v": 0.09375,
+                "tileIndex": 98
+            },
+            "big_smoke_9": {
+                "u": 0.09375,
+                "v": 0.0625,
+                "tileIndex": 67
+            },
+            "bubble": {
+                "u": 0.09375,
+                "v": 0.09375,
+                "tileIndex": 99
+            },
+            "bubble_pop_0": {
+                "u": 0.125,
+                "v": 0,
+                "tileIndex": 4
+            },
+            "bubble_pop_1": {
+                "u": 0.15625,
+                "v": 0,
+                "tileIndex": 5
+            },
+            "bubble_pop_2": {
+                "u": 0.1875,
+                "v": 0,
+                "tileIndex": 6
+            },
+            "bubble_pop_3": {
+                "u": 0.21875,
+                "v": 0,
+                "tileIndex": 7
+            },
+            "bubble_pop_4": {
+                "u": 0.125,
+                "v": 0.03125,
+                "tileIndex": 36
+            },
+            "critical_hit": {
+                "u": 0.15625,
+                "v": 0.03125,
+                "tileIndex": 37
+            },
+            "damage": {
+                "u": 0.1875,
+                "v": 0.03125,
+                "tileIndex": 38
+            },
+            "drip_fall": {
+                "u": 0.21875,
+                "v": 0.03125,
+                "tileIndex": 39
+            },
+            "drip_hang": {
+                "u": 0.125,
+                "v": 0.0625,
+                "tileIndex": 68
+            },
+            "drip_land": {
+                "u": 0.15625,
+                "v": 0.0625,
+                "tileIndex": 69
+            },
+            "effect_0": {
+                "u": 0.1875,
+                "v": 0.0625,
+                "tileIndex": 70
+            },
+            "effect_1": {
+                "u": 0.21875,
+                "v": 0.0625,
+                "tileIndex": 71
+            },
+            "effect_2": {
+                "u": 0.125,
+                "v": 0.09375,
+                "tileIndex": 100
+            },
+            "effect_3": {
+                "u": 0.15625,
+                "v": 0.09375,
+                "tileIndex": 101
+            },
+            "effect_4": {
+                "u": 0.1875,
+                "v": 0.09375,
+                "tileIndex": 102
+            },
+            "effect_5": {
+                "u": 0.21875,
+                "v": 0.09375,
+                "tileIndex": 103
+            },
+            "effect_6": {
+                "u": 0,
+                "v": 0.125,
+                "tileIndex": 128
+            },
+            "effect_7": {
+                "u": 0,
+                "v": 0.15625,
+                "tileIndex": 160
+            },
+            "enchanted_hit": {
+                "u": 0,
+                "v": 0.1875,
+                "tileIndex": 192
+            },
+            "explosion_0": {
+                "u": 0,
+                "v": 0.21875,
+                "tileIndex": 224
+            },
+            "explosion_1": {
+                "u": 0.03125,
+                "v": 0.125,
+                "tileIndex": 129
+            },
+            "explosion_10": {
+                "u": 0.03125,
+                "v": 0.15625,
+                "tileIndex": 161
+            },
+            "explosion_11": {
+                "u": 0.03125,
+                "v": 0.1875,
+                "tileIndex": 193
+            },
+            "explosion_12": {
+                "u": 0.03125,
+                "v": 0.21875,
+                "tileIndex": 225
+            },
+            "explosion_13": {
+                "u": 0.0625,
+                "v": 0.125,
+                "tileIndex": 130
+            },
+            "explosion_14": {
+                "u": 0.0625,
+                "v": 0.15625,
+                "tileIndex": 162
+            },
+            "explosion_15": {
+                "u": 0.0625,
+                "v": 0.1875,
+                "tileIndex": 194
+            },
+            "explosion_2": {
+                "u": 0.0625,
+                "v": 0.21875,
+                "tileIndex": 226
+            },
+            "explosion_3": {
+                "u": 0.09375,
+                "v": 0.125,
+                "tileIndex": 131
+            },
+            "explosion_4": {
+                "u": 0.09375,
+                "v": 0.15625,
+                "tileIndex": 163
+            },
+            "explosion_5": {
+                "u": 0.09375,
+                "v": 0.1875,
+                "tileIndex": 195
+            },
+            "explosion_6": {
+                "u": 0.09375,
+                "v": 0.21875,
+                "tileIndex": 227
+            },
+            "explosion_7": {
+                "u": 0.125,
+                "v": 0.125,
+                "tileIndex": 132
+            },
+            "explosion_8": {
+                "u": 0.125,
+                "v": 0.15625,
+                "tileIndex": 164
+            },
+            "explosion_9": {
+                "u": 0.125,
+                "v": 0.1875,
+                "tileIndex": 196
+            },
+            "flame": {
+                "u": 0.125,
+                "v": 0.21875,
+                "tileIndex": 228
+            },
+            "flash": {
+                "u": 0.15625,
+                "v": 0.125,
+                "tileIndex": 133
+            },
+            "generic_0": {
+                "u": 0.1875,
+                "v": 0.125,
+                "tileIndex": 134
+            },
+            "generic_1": {
+                "u": 0.21875,
+                "v": 0.125,
+                "tileIndex": 135
+            },
+            "generic_2": {
+                "u": 0.15625,
+                "v": 0.15625,
+                "tileIndex": 165
+            },
+            "generic_3": {
+                "u": 0.15625,
+                "v": 0.1875,
+                "tileIndex": 197
+            },
+            "generic_4": {
+                "u": 0.15625,
+                "v": 0.21875,
+                "tileIndex": 229
+            },
+            "generic_5": {
+                "u": 0.1875,
+                "v": 0.15625,
+                "tileIndex": 166
+            },
+            "generic_6": {
+                "u": 0.21875,
+                "v": 0.15625,
+                "tileIndex": 167
+            },
+            "generic_7": {
+                "u": 0.1875,
+                "v": 0.1875,
+                "tileIndex": 198
+            },
+            "glint": {
+                "u": 0.1875,
+                "v": 0.21875,
+                "tileIndex": 230
+            },
+            "glitter_0": {
+                "u": 0.21875,
+                "v": 0.1875,
+                "tileIndex": 199
+            },
+            "glitter_1": {
+                "u": 0.21875,
+                "v": 0.21875,
+                "tileIndex": 231
+            },
+            "glitter_2": {
+                "u": 0.25,
+                "v": 0,
+                "tileIndex": 8
+            },
+            "glitter_3": {
+                "u": 0.28125,
+                "v": 0,
+                "tileIndex": 9
+            },
+            "glitter_4": {
+                "u": 0.3125,
+                "v": 0,
+                "tileIndex": 10
+            },
+            "glitter_5": {
+                "u": 0.34375,
+                "v": 0,
+                "tileIndex": 11
+            },
+            "glitter_6": {
+                "u": 0.375,
+                "v": 0,
+                "tileIndex": 12
+            },
+            "glitter_7": {
+                "u": 0.40625,
+                "v": 0,
+                "tileIndex": 13
+            },
+            "heart": {
+                "u": 0.4375,
+                "v": 0,
+                "tileIndex": 14
+            },
+            "lava": {
+                "u": 0.46875,
+                "v": 0,
+                "tileIndex": 15
+            },
+            "nautilus": {
+                "u": 0.25,
+                "v": 0.03125,
+                "tileIndex": 40
+            },
+            "note": {
+                "u": 0.28125,
+                "v": 0.03125,
+                "tileIndex": 41
+            },
+            "sga_a": {
+                "u": 0.3125,
+                "v": 0.03125,
+                "tileIndex": 42
+            },
+            "sga_b": {
+                "u": 0.34375,
+                "v": 0.03125,
+                "tileIndex": 43
+            },
+            "sga_c": {
+                "u": 0.375,
+                "v": 0.03125,
+                "tileIndex": 44
+            },
+            "sga_d": {
+                "u": 0.40625,
+                "v": 0.03125,
+                "tileIndex": 45
+            },
+            "sga_e": {
+                "u": 0.4375,
+                "v": 0.03125,
+                "tileIndex": 46
+            },
+            "sga_f": {
+                "u": 0.46875,
+                "v": 0.03125,
+                "tileIndex": 47
+            },
+            "sga_g": {
+                "u": 0.25,
+                "v": 0.0625,
+                "tileIndex": 72
+            },
+            "sga_h": {
+                "u": 0.28125,
+                "v": 0.0625,
+                "tileIndex": 73
+            },
+            "sga_i": {
+                "u": 0.3125,
+                "v": 0.0625,
+                "tileIndex": 74
+            },
+            "sga_j": {
+                "u": 0.34375,
+                "v": 0.0625,
+                "tileIndex": 75
+            },
+            "sga_k": {
+                "u": 0.375,
+                "v": 0.0625,
+                "tileIndex": 76
+            },
+            "sga_l": {
+                "u": 0.40625,
+                "v": 0.0625,
+                "tileIndex": 77
+            },
+            "sga_m": {
+                "u": 0.4375,
+                "v": 0.0625,
+                "tileIndex": 78
+            },
+            "sga_n": {
+                "u": 0.46875,
+                "v": 0.0625,
+                "tileIndex": 79
+            },
+            "sga_o": {
+                "u": 0.25,
+                "v": 0.09375,
+                "tileIndex": 104
+            },
+            "sga_p": {
+                "u": 0.28125,
+                "v": 0.09375,
+                "tileIndex": 105
+            },
+            "sga_q": {
+                "u": 0.3125,
+                "v": 0.09375,
+                "tileIndex": 106
+            },
+            "sga_r": {
+                "u": 0.34375,
+                "v": 0.09375,
+                "tileIndex": 107
+            },
+            "sga_s": {
+                "u": 0.375,
+                "v": 0.09375,
+                "tileIndex": 108
+            },
+            "sga_t": {
+                "u": 0.40625,
+                "v": 0.09375,
+                "tileIndex": 109
+            },
+            "sga_u": {
+                "u": 0.4375,
+                "v": 0.09375,
+                "tileIndex": 110
+            },
+            "sga_v": {
+                "u": 0.46875,
+                "v": 0.09375,
+                "tileIndex": 111
+            },
+            "sga_w": {
+                "u": 0.25,
+                "v": 0.125,
+                "tileIndex": 136
+            },
+            "sga_x": {
+                "u": 0.28125,
+                "v": 0.125,
+                "tileIndex": 137
+            },
+            "sga_y": {
+                "u": 0.3125,
+                "v": 0.125,
+                "tileIndex": 138
+            },
+            "sga_z": {
+                "u": 0.34375,
+                "v": 0.125,
+                "tileIndex": 139
+            },
+            "spark_0": {
+                "u": 0.375,
+                "v": 0.125,
+                "tileIndex": 140
+            },
+            "spark_1": {
+                "u": 0.40625,
+                "v": 0.125,
+                "tileIndex": 141
+            },
+            "spark_2": {
+                "u": 0.4375,
+                "v": 0.125,
+                "tileIndex": 142
+            },
+            "spark_3": {
+                "u": 0.46875,
+                "v": 0.125,
+                "tileIndex": 143
+            },
+            "spark_4": {
+                "u": 0.25,
+                "v": 0.15625,
+                "tileIndex": 168
+            },
+            "spark_5": {
+                "u": 0.28125,
+                "v": 0.15625,
+                "tileIndex": 169
+            },
+            "spark_6": {
+                "u": 0.3125,
+                "v": 0.15625,
+                "tileIndex": 170
+            },
+            "spark_7": {
+                "u": 0.34375,
+                "v": 0.15625,
+                "tileIndex": 171
+            },
+            "spell_0": {
+                "u": 0.375,
+                "v": 0.15625,
+                "tileIndex": 172
+            },
+            "spell_1": {
+                "u": 0.40625,
+                "v": 0.15625,
+                "tileIndex": 173
+            },
+            "spell_2": {
+                "u": 0.4375,
+                "v": 0.15625,
+                "tileIndex": 174
+            },
+            "spell_3": {
+                "u": 0.46875,
+                "v": 0.15625,
+                "tileIndex": 175
+            },
+            "spell_4": {
+                "u": 0.25,
+                "v": 0.1875,
+                "tileIndex": 200
+            },
+            "spell_5": {
+                "u": 0.28125,
+                "v": 0.1875,
+                "tileIndex": 201
+            },
+            "spell_6": {
+                "u": 0.3125,
+                "v": 0.1875,
+                "tileIndex": 202
+            },
+            "spell_7": {
+                "u": 0.34375,
+                "v": 0.1875,
+                "tileIndex": 203
+            },
+            "splash_0": {
+                "u": 0.375,
+                "v": 0.1875,
+                "tileIndex": 204
+            },
+            "splash_1": {
+                "u": 0.40625,
+                "v": 0.1875,
+                "tileIndex": 205
+            },
+            "splash_2": {
+                "u": 0.4375,
+                "v": 0.1875,
+                "tileIndex": 206
+            },
+            "splash_3": {
+                "u": 0.46875,
+                "v": 0.1875,
+                "tileIndex": 207
+            },
+            "sweep_0": {
+                "u": 0.25,
+                "v": 0.21875,
+                "tileIndex": 232
+            },
+            "sweep_1": {
+                "u": 0.28125,
+                "v": 0.21875,
+                "tileIndex": 233
+            },
+            "sweep_2": {
+                "u": 0.3125,
+                "v": 0.21875,
+                "tileIndex": 234
+            },
+            "sweep_3": {
+                "u": 0.34375,
+                "v": 0.21875,
+                "tileIndex": 235
+            },
+            "sweep_4": {
+                "u": 0.375,
+                "v": 0.21875,
+                "tileIndex": 236
+            },
+            "sweep_5": {
+                "u": 0.40625,
+                "v": 0.21875,
+                "tileIndex": 237
+            },
+            "sweep_6": {
+                "u": 0.4375,
+                "v": 0.21875,
+                "tileIndex": 238
+            },
+            "sweep_7": {
+                "u": 0.46875,
+                "v": 0.21875,
+                "tileIndex": 239
+            },
+            "soul_0": {
+                "u": 0,
+                "v": 0.25,
+                "tileIndex": 256
+            },
+            "soul_1": {
+                "u": 0,
+                "v": 0.28125,
+                "tileIndex": 288
+            },
+            "soul_10": {
+                "u": 0,
+                "v": 0.3125,
+                "tileIndex": 320
+            },
+            "soul_2": {
+                "u": 0,
+                "v": 0.34375,
+                "tileIndex": 352
+            },
+            "soul_3": {
+                "u": 0,
+                "v": 0.375,
+                "tileIndex": 384
+            },
+            "soul_4": {
+                "u": 0,
+                "v": 0.40625,
+                "tileIndex": 416
+            },
+            "soul_5": {
+                "u": 0,
+                "v": 0.4375,
+                "tileIndex": 448
+            },
+            "soul_6": {
+                "u": 0,
+                "v": 0.46875,
+                "tileIndex": 480
+            },
+            "soul_7": {
+                "u": 0.03125,
+                "v": 0.25,
+                "tileIndex": 257
+            },
+            "soul_8": {
+                "u": 0.03125,
+                "v": 0.28125,
+                "tileIndex": 289
+            },
+            "soul_9": {
+                "u": 0.03125,
+                "v": 0.3125,
+                "tileIndex": 321
+            },
+            "soul_fire_flame": {
+                "u": 0.03125,
+                "v": 0.34375,
+                "tileIndex": 353
+            },
+            "glow": {
+                "u": 0.03125,
+                "v": 0.375,
+                "tileIndex": 385
+            },
+            "vibration": {
+                "u": 0.03125,
+                "v": 0.40625,
+                "tileIndex": 417
+            },
+            "sculk_charge_0": {
+                "u": 0.03125,
+                "v": 0.4375,
+                "tileIndex": 449
+            },
+            "sculk_charge_1": {
+                "u": 0.03125,
+                "v": 0.46875,
+                "tileIndex": 481
+            },
+            "sculk_charge_2": {
+                "u": 0.0625,
+                "v": 0.25,
+                "tileIndex": 258
+            },
+            "sculk_charge_3": {
+                "u": 0.0625,
+                "v": 0.28125,
+                "tileIndex": 290
+            },
+            "sculk_charge_4": {
+                "u": 0.0625,
+                "v": 0.3125,
+                "tileIndex": 322
+            },
+            "sculk_charge_5": {
+                "u": 0.0625,
+                "v": 0.34375,
+                "tileIndex": 354
+            },
+            "sculk_charge_6": {
+                "u": 0.0625,
+                "v": 0.375,
+                "tileIndex": 386
+            },
+            "sculk_charge_pop_0": {
+                "u": 0.0625,
+                "v": 0.40625,
+                "tileIndex": 418
+            },
+            "sculk_charge_pop_1": {
+                "u": 0.0625,
+                "v": 0.4375,
+                "tileIndex": 450
+            },
+            "sculk_charge_pop_2": {
+                "u": 0.0625,
+                "v": 0.46875,
+                "tileIndex": 482
+            },
+            "sculk_charge_pop_3": {
+                "u": 0.09375,
+                "v": 0.25,
+                "tileIndex": 259
+            },
+            "sculk_soul_0": {
+                "u": 0.09375,
+                "v": 0.28125,
+                "tileIndex": 291
+            },
+            "sculk_soul_1": {
+                "u": 0.09375,
+                "v": 0.3125,
+                "tileIndex": 323
+            },
+            "sculk_soul_10": {
+                "u": 0.09375,
+                "v": 0.34375,
+                "tileIndex": 355
+            },
+            "sculk_soul_2": {
+                "u": 0.09375,
+                "v": 0.375,
+                "tileIndex": 387
+            },
+            "sculk_soul_3": {
+                "u": 0.09375,
+                "v": 0.40625,
+                "tileIndex": 419
+            },
+            "sculk_soul_4": {
+                "u": 0.09375,
+                "v": 0.4375,
+                "tileIndex": 451
+            },
+            "sculk_soul_5": {
+                "u": 0.09375,
+                "v": 0.46875,
+                "tileIndex": 483
+            },
+            "sculk_soul_6": {
+                "u": 0.125,
+                "v": 0.25,
+                "tileIndex": 260
+            },
+            "sculk_soul_7": {
+                "u": 0.125,
+                "v": 0.28125,
+                "tileIndex": 292
+            },
+            "sculk_soul_8": {
+                "u": 0.125,
+                "v": 0.3125,
+                "tileIndex": 324
+            },
+            "sculk_soul_9": {
+                "u": 0.125,
+                "v": 0.34375,
+                "tileIndex": 356
+            },
+            "shriek": {
+                "u": 0.125,
+                "v": 0.375,
+                "tileIndex": 388
+            },
+            "sonic_boom_0": {
+                "u": 0.125,
+                "v": 0.40625,
+                "tileIndex": 420
+            },
+            "sonic_boom_1": {
+                "u": 0.125,
+                "v": 0.4375,
+                "tileIndex": 452
+            },
+            "sonic_boom_10": {
+                "u": 0.125,
+                "v": 0.46875,
+                "tileIndex": 484
+            },
+            "sonic_boom_11": {
+                "u": 0.15625,
+                "v": 0.25,
+                "tileIndex": 261
+            },
+            "sonic_boom_12": {
+                "u": 0.15625,
+                "v": 0.28125,
+                "tileIndex": 293
+            },
+            "sonic_boom_13": {
+                "u": 0.15625,
+                "v": 0.3125,
+                "tileIndex": 325
+            },
+            "sonic_boom_14": {
+                "u": 0.15625,
+                "v": 0.34375,
+                "tileIndex": 357
+            },
+            "sonic_boom_15": {
+                "u": 0.15625,
+                "v": 0.375,
+                "tileIndex": 389
+            },
+            "sonic_boom_2": {
+                "u": 0.15625,
+                "v": 0.40625,
+                "tileIndex": 421
+            },
+            "sonic_boom_3": {
+                "u": 0.15625,
+                "v": 0.4375,
+                "tileIndex": 453
+            },
+            "sonic_boom_4": {
+                "u": 0.15625,
+                "v": 0.46875,
+                "tileIndex": 485
+            },
+            "sonic_boom_5": {
+                "u": 0.1875,
+                "v": 0.25,
+                "tileIndex": 262
+            },
+            "sonic_boom_6": {
+                "u": 0.1875,
+                "v": 0.28125,
+                "tileIndex": 294
+            },
+            "sonic_boom_7": {
+                "u": 0.1875,
+                "v": 0.3125,
+                "tileIndex": 326
+            },
+            "sonic_boom_8": {
+                "u": 0.1875,
+                "v": 0.34375,
+                "tileIndex": 358
+            },
+            "sonic_boom_9": {
+                "u": 0.1875,
+                "v": 0.375,
+                "tileIndex": 390
+            },
+            "cherry_0": {
+                "u": 0.1875,
+                "v": 0.40625,
+                "tileIndex": 422
+            },
+            "cherry_1": {
+                "u": 0.1875,
+                "v": 0.4375,
+                "tileIndex": 454
+            },
+            "cherry_10": {
+                "u": 0.1875,
+                "v": 0.46875,
+                "tileIndex": 486
+            },
+            "cherry_11": {
+                "u": 0.21875,
+                "v": 0.25,
+                "tileIndex": 263
+            },
+            "cherry_2": {
+                "u": 0.21875,
+                "v": 0.28125,
+                "tileIndex": 295
+            },
+            "cherry_3": {
+                "u": 0.21875,
+                "v": 0.3125,
+                "tileIndex": 327
+            },
+            "cherry_4": {
+                "u": 0.21875,
+                "v": 0.34375,
+                "tileIndex": 359
+            },
+            "cherry_5": {
+                "u": 0.21875,
+                "v": 0.375,
+                "tileIndex": 391
+            },
+            "cherry_6": {
+                "u": 0.21875,
+                "v": 0.40625,
+                "tileIndex": 423
+            },
+            "cherry_7": {
+                "u": 0.21875,
+                "v": 0.4375,
+                "tileIndex": 455
+            },
+            "cherry_8": {
+                "u": 0.21875,
+                "v": 0.46875,
+                "tileIndex": 487
+            },
+            "cherry_9": {
+                "u": 0.25,
+                "v": 0.25,
+                "tileIndex": 264
+            },
+            "goldheart_0": {
+                "u": 0.25,
+                "v": 0.28125,
+                "tileIndex": 296
+            },
+            "goldheart_1": {
+                "u": 0.25,
+                "v": 0.3125,
+                "tileIndex": 328
+            },
+            "goldheart_2": {
+                "u": 0.25,
+                "v": 0.34375,
+                "tileIndex": 360
+            },
+            "gust_0": {
+                "u": 0.25,
+                "v": 0.375,
+                "tileIndex": 392
+            },
+            "gust_1": {
+                "u": 0.25,
+                "v": 0.40625,
+                "tileIndex": 424
+            },
+            "gust_10": {
+                "u": 0.25,
+                "v": 0.4375,
+                "tileIndex": 456
+            },
+            "gust_11": {
+                "u": 0.25,
+                "v": 0.46875,
+                "tileIndex": 488
+            },
+            "gust_2": {
+                "u": 0.28125,
+                "v": 0.25,
+                "tileIndex": 265
+            },
+            "gust_3": {
+                "u": 0.3125,
+                "v": 0.25,
+                "tileIndex": 266
+            },
+            "gust_4": {
+                "u": 0.34375,
+                "v": 0.25,
+                "tileIndex": 267
+            },
+            "gust_5": {
+                "u": 0.375,
+                "v": 0.25,
+                "tileIndex": 268
+            },
+            "gust_6": {
+                "u": 0.40625,
+                "v": 0.25,
+                "tileIndex": 269
+            },
+            "gust_7": {
+                "u": 0.4375,
+                "v": 0.25,
+                "tileIndex": 270
+            },
+            "gust_8": {
+                "u": 0.46875,
+                "v": 0.25,
+                "tileIndex": 271
+            },
+            "gust_9": {
+                "u": 0.28125,
+                "v": 0.28125,
+                "tileIndex": 297
+            },
+            "trial_spawner_detection_0": {
+                "u": 0.28125,
+                "v": 0.3125,
+                "tileIndex": 329
+            },
+            "trial_spawner_detection_1": {
+                "u": 0.28125,
+                "v": 0.34375,
+                "tileIndex": 361
+            },
+            "trial_spawner_detection_2": {
+                "u": 0.28125,
+                "v": 0.375,
+                "tileIndex": 393
+            },
+            "trial_spawner_detection_3": {
+                "u": 0.28125,
+                "v": 0.40625,
+                "tileIndex": 425
+            },
+            "trial_spawner_detection_4": {
+                "u": 0.28125,
+                "v": 0.4375,
+                "tileIndex": 457
+            },
+            "infested": {
+                "u": 0.28125,
+                "v": 0.46875,
+                "tileIndex": 489
+            },
+            "ominous_spawning": {
+                "u": 0.3125,
+                "v": 0.28125,
+                "tileIndex": 298
+            },
+            "raid_omen": {
+                "u": 0.34375,
+                "v": 0.28125,
+                "tileIndex": 299
+            },
+            "small_gust_0": {
+                "u": 0.375,
+                "v": 0.28125,
+                "tileIndex": 300
+            },
+            "small_gust_1": {
+                "u": 0.40625,
+                "v": 0.28125,
+                "tileIndex": 301
+            },
+            "small_gust_2": {
+                "u": 0.4375,
+                "v": 0.28125,
+                "tileIndex": 302
+            },
+            "small_gust_3": {
+                "u": 0.46875,
+                "v": 0.28125,
+                "tileIndex": 303
+            },
+            "small_gust_4": {
+                "u": 0.3125,
+                "v": 0.3125,
+                "tileIndex": 330
+            },
+            "small_gust_5": {
+                "u": 0.3125,
+                "v": 0.34375,
+                "tileIndex": 362
+            },
+            "small_gust_6": {
+                "u": 0.3125,
+                "v": 0.375,
+                "tileIndex": 394
+            },
+            "trial_omen": {
+                "u": 0.3125,
+                "v": 0.40625,
+                "tileIndex": 426
+            },
+            "trial_spawner_detection_ominous_0": {
+                "u": 0.3125,
+                "v": 0.4375,
+                "tileIndex": 458
+            },
+            "trial_spawner_detection_ominous_1": {
+                "u": 0.3125,
+                "v": 0.46875,
+                "tileIndex": 490
+            },
+            "trial_spawner_detection_ominous_2": {
+                "u": 0.34375,
+                "v": 0.3125,
+                "tileIndex": 331
+            },
+            "trial_spawner_detection_ominous_3": {
+                "u": 0.375,
+                "v": 0.3125,
+                "tileIndex": 332
+            },
+            "trial_spawner_detection_ominous_4": {
+                "u": 0.40625,
+                "v": 0.3125,
+                "tileIndex": 333
+            },
+            "vault_connection": {
+                "u": 0.4375,
+                "v": 0.3125,
+                "tileIndex": 334
+            },
+            "pale_oak_0": {
+                "u": 0.46875,
+                "v": 0.3125,
+                "tileIndex": 335
+            },
+            "pale_oak_1": {
+                "u": 0.34375,
+                "v": 0.34375,
+                "tileIndex": 363
+            },
+            "pale_oak_10": {
+                "u": 0.34375,
+                "v": 0.375,
+                "tileIndex": 395
+            },
+            "pale_oak_11": {
+                "u": 0.34375,
+                "v": 0.40625,
+                "tileIndex": 427
+            },
+            "pale_oak_2": {
+                "u": 0.34375,
+                "v": 0.4375,
+                "tileIndex": 459
+            },
+            "pale_oak_3": {
+                "u": 0.34375,
+                "v": 0.46875,
+                "tileIndex": 491
+            },
+            "pale_oak_4": {
+                "u": 0.375,
+                "v": 0.34375,
+                "tileIndex": 364
+            },
+            "pale_oak_5": {
+                "u": 0.40625,
+                "v": 0.34375,
+                "tileIndex": 365
+            },
+            "pale_oak_6": {
+                "u": 0.4375,
+                "v": 0.34375,
+                "tileIndex": 366
+            },
+            "pale_oak_7": {
+                "u": 0.46875,
+                "v": 0.34375,
+                "tileIndex": 367
+            },
+            "pale_oak_8": {
+                "u": 0.375,
+                "v": 0.375,
+                "tileIndex": 396
+            },
+            "pale_oak_9": {
+                "u": 0.375,
+                "v": 0.40625,
+                "tileIndex": 428
+            },
+            "firefly": {
+                "u": 0.375,
+                "v": 0.4375,
+                "tileIndex": 460
+            },
+            "leaf_0": {
+                "u": 0.375,
+                "v": 0.46875,
+                "tileIndex": 492
+            },
+            "leaf_1": {
+                "u": 0.40625,
+                "v": 0.375,
+                "tileIndex": 397
+            },
+            "leaf_10": {
+                "u": 0.4375,
+                "v": 0.375,
+                "tileIndex": 398
+            },
+            "leaf_11": {
+                "u": 0.46875,
+                "v": 0.375,
+                "tileIndex": 399
+            },
+            "leaf_2": {
+                "u": 0.40625,
+                "v": 0.40625,
+                "tileIndex": 429
+            },
+            "leaf_3": {
+                "u": 0.40625,
+                "v": 0.4375,
+                "tileIndex": 461
+            },
+            "leaf_4": {
+                "u": 0.40625,
+                "v": 0.46875,
+                "tileIndex": 493
+            },
+            "leaf_5": {
+                "u": 0.4375,
+                "v": 0.40625,
+                "tileIndex": 430
+            },
+            "leaf_6": {
+                "u": 0.46875,
+                "v": 0.40625,
+                "tileIndex": 431
+            },
+            "leaf_7": {
+                "u": 0.4375,
+                "v": 0.4375,
+                "tileIndex": 462
+            },
+            "leaf_8": {
+                "u": 0.4375,
+                "v": 0.46875,
+                "tileIndex": 494
+            },
+            "leaf_9": {
+                "u": 0.46875,
+                "v": 0.4375,
+                "tileIndex": 463
+            },
+            "copper_fire_flame": {
+                "u": 0.46875,
+                "v": 0.46875,
+                "tileIndex": 495
+            },
+            "bubble_white": {
+                "u": 0.5,
+                "v": 0,
+                "tileIndex": 16
+            },
+            "geyser_base_01": {
+                "u": 0.53125,
+                "v": 0,
+                "tileIndex": 17
+            },
+            "geyser_base_02": {
+                "u": 0.5625,
+                "v": 0,
+                "tileIndex": 18
+            },
+            "geyser_base_03": {
+                "u": 0.59375,
+                "v": 0,
+                "tileIndex": 19
+            },
+            "geyser_base_04": {
+                "u": 0.625,
+                "v": 0,
+                "tileIndex": 20
+            },
+            "geyser_base_05": {
+                "u": 0.65625,
+                "v": 0,
+                "tileIndex": 21
+            },
+            "geyser_base_06": {
+                "u": 0.6875,
+                "v": 0,
+                "tileIndex": 22
+            },
+            "geyser_base_07": {
+                "u": 0.71875,
+                "v": 0,
+                "tileIndex": 23
+            },
+            "geyser_base_08": {
+                "u": 0.75,
+                "v": 0,
+                "tileIndex": 24
+            },
+            "geyser_plume_01": {
+                "u": 0.78125,
+                "v": 0,
+                "tileIndex": 25
+            },
+            "geyser_plume_02": {
+                "u": 0.8125,
+                "v": 0,
+                "tileIndex": 26
+            },
+            "geyser_plume_03": {
+                "u": 0.84375,
+                "v": 0,
+                "tileIndex": 27
+            },
+            "geyser_plume_04": {
+                "u": 0.875,
+                "v": 0,
+                "tileIndex": 28
+            },
+            "geyser_plume_05": {
+                "u": 0.90625,
+                "v": 0,
+                "tileIndex": 29
+            },
+            "geyser_plume_06": {
+                "u": 0.9375,
+                "v": 0,
+                "tileIndex": 30
+            },
+            "geyser_plume_07": {
+                "u": 0.96875,
+                "v": 0,
+                "tileIndex": 31
+            },
+            "geyser_plume_08": {
+                "u": 0.5,
+                "v": 0.03125,
+                "tileIndex": 48
+            },
+            "geyser_poof_01": {
+                "u": 0.53125,
+                "v": 0.03125,
+                "tileIndex": 49
+            },
+            "geyser_poof_02": {
+                "u": 0.5625,
+                "v": 0.03125,
+                "tileIndex": 50
+            },
+            "geyser_poof_03": {
+                "u": 0.59375,
+                "v": 0.03125,
+                "tileIndex": 51
+            },
+            "geyser_poof_04": {
+                "u": 0.625,
+                "v": 0.03125,
+                "tileIndex": 52
+            },
+            "geyser_poof_05": {
+                "u": 0.65625,
+                "v": 0.03125,
+                "tileIndex": 53
+            },
+            "geyser_poof_06": {
+                "u": 0.6875,
+                "v": 0.03125,
+                "tileIndex": 54
+            },
+            "geyser_poof_07": {
+                "u": 0.71875,
+                "v": 0.03125,
+                "tileIndex": 55
+            },
+            "geyser_poof_08": {
+                "u": 0.75,
+                "v": 0.03125,
+                "tileIndex": 56
+            },
+            "noxious_gas_01": {
+                "u": 0.78125,
+                "v": 0.03125,
+                "tileIndex": 57
+            },
+            "noxious_gas_02": {
+                "u": 0.8125,
+                "v": 0.03125,
+                "tileIndex": 58
+            },
+            "noxious_gas_03": {
+                "u": 0.84375,
+                "v": 0.03125,
+                "tileIndex": 59
+            },
+            "noxious_gas_04": {
+                "u": 0.875,
+                "v": 0.03125,
+                "tileIndex": 60
+            },
+            "noxious_gas_05": {
+                "u": 0.90625,
+                "v": 0.03125,
+                "tileIndex": 61
+            },
+            "noxious_gas_06": {
+                "u": 0.9375,
+                "v": 0.03125,
+                "tileIndex": 62
+            },
+            "noxious_gas_07": {
+                "u": 0.96875,
+                "v": 0.03125,
+                "tileIndex": 63
+            },
+            "noxious_gas_08": {
+                "u": 0.5,
+                "v": 0.0625,
+                "tileIndex": 80
+            },
+            "sulfur_cube_goo": {
+                "u": 0.53125,
+                "v": 0.0625,
+                "tileIndex": 81
+            },
+            "orange_poplar_1": {
+                "u": 0.5625,
+                "v": 0.0625,
+                "tileIndex": 82
+            },
+            "orange_poplar_2": {
+                "u": 0.59375,
+                "v": 0.0625,
+                "tileIndex": 83
+            },
+            "orange_poplar_3": {
+                "u": 0.625,
+                "v": 0.0625,
+                "tileIndex": 84
+            },
+            "orange_poplar_4": {
+                "u": 0.65625,
+                "v": 0.0625,
+                "tileIndex": 85
+            },
+            "red_poplar_1": {
+                "u": 0.6875,
+                "v": 0.0625,
+                "tileIndex": 86
+            },
+            "red_poplar_2": {
+                "u": 0.71875,
+                "v": 0.0625,
+                "tileIndex": 87
+            },
+            "red_poplar_3": {
+                "u": 0.75,
+                "v": 0.0625,
+                "tileIndex": 88
+            },
+            "red_poplar_4": {
+                "u": 0.78125,
+                "v": 0.0625,
+                "tileIndex": 89
+            },
+            "yellow_poplar_1": {
+                "u": 0.8125,
+                "v": 0.0625,
+                "tileIndex": 90
+            },
+            "yellow_poplar_2": {
+                "u": 0.84375,
+                "v": 0.0625,
+                "tileIndex": 91
+            },
+            "yellow_poplar_3": {
+                "u": 0.875,
+                "v": 0.0625,
+                "tileIndex": 92
+            },
+            "yellow_poplar_4": {
+                "u": 0.90625,
+                "v": 0.0625,
+                "tileIndex": 93
+            }
+        }
+    },
+    "legacy": {
+        "suSv": 0.5,
+        "tileSize": 16,
+        "width": 32,
+        "height": 32,
+        "textures": {
+            "1.9/particles": {
+                "u": 0,
+                "v": 0,
+                "tileIndex": 0
+            },
+            "1.13/particles": {
+                "u": 0.5,
+                "v": 0,
+                "tileIndex": 1
+            },
+            "1.15.2/critical_hit": {
+                "u": 0,
+                "v": 0.5,
+                "tileIndex": 2
+            }
+        }
+    }
+}

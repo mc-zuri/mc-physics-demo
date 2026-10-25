@@ -1,0 +1,75 @@
+[submodule "minecraft-web-client"]
+	path = minecraft-web-client
+	url = https://github.com/mc-zuri/prismarine-web-client.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "mineflayer"]
+	path = mineflayer
+	url = https://github.com/mc-zuri/mineflayer.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "mineflayer-physics-utils"]
+	path = mineflayer-physics-utils
+	url = https://github.com/mc-zuri/mineflayer-physics-utils.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "minecraft-pathfinding"]
+	path = minecraft-pathfinding
+	url = https://github.com/mc-zuri/minecraft-pathfinding.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "mineflayer-survival"]
+	path = mineflayer-survival
+	url = https://github.com/mc-zuri/mineflayer-survival.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "minecraft-renderer"]
+	path = minecraft-renderer
+	url = https://github.com/mc-zuri/minecraft-renderer.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "mc-assets"]
+	path = mc-assets
+	url = https://github.com/mc-zuri/mc-assets.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "mineflayer-mouse"]
+	path = mineflayer-mouse
+	url = https://github.com/mc-zuri/mineflayer-mouse.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "prismarine-chunk"]
+	path = prismarine-chunk
+	url = https://github.com/mc-zuri/prismarine-chunk.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "minecraft-data"]
+	path = minecraft-data
+	url = https://github.com/mc-zuri/minecraft-data-node.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "minecraft-protocol"]
+	path = minecraft-protocol
+	url = https://github.com/mc-zuri/node-minecraft-protocol.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "prismarine-item"]
+	path = prismarine-item
+	url = https://github.com/mc-zuri/prismarine-item.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "prismarine-windows"]
+	path = prismarine-windows
+	url = https://github.com/mc-zuri/prismarine-windows.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "prismarine-block"]
+	path = prismarine-block
+	url = https://github.com/mc-zuri/prismarine-block.git
+	branch = mc-physics-demo
+	shallow = true
+[submodule "minecraft-physics-native"]
+	path = minecraft-physics-native
+	url = https://github.com/mc-zuri/minecraft-physics-native.git
+	branch = mc-physics-demo
+	shallow = true

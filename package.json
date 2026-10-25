@@ -1,0 +1,15 @@
+{
+  "name": "mc-physics-demo",
+  "private": true,
+  "description": "The Minecraft web client with minecraft-physics-native's WebAssembly engine moving the player, and every fork it runs on",
+  "packageManager": "pnpm@11.13.0",
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "start": "corepack pnpm@10.32.1 --dir minecraft-web-client start",
+    "build": "pnpm --filter @nxg-org/mineflayer-physics-util run build && pnpm --filter @nxg-org/mineflayer-pathfinder run build && pnpm --filter mineflayer-survival run build",
+    "update-prebuilt": "node scripts/update-prebuilt.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

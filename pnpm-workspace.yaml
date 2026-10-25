@@ -1,0 +1,36 @@
+packages:
+  - mineflayer
+  - mineflayer-physics-utils
+  - minecraft-pathfinding
+  - mineflayer-survival
+  - minecraft-data
+
+# every package resolves the forks here instead of the published or github copies
+overrides:
+  mineflayer: 'workspace:*'
+  '@nxg-org/mineflayer-physics-util': 'workspace:*'
+  vec3: ^0.2.0
+  # 26.1 - 26.3, vanilla-exact protocol types
+  minecraft-data: 'workspace:*'
+  minecraft-protocol: 'file:./minecraft-protocol'
+  # the 26.1 - 26.3 chunk codecs (26.3 light masks as byte arrays)
+  prismarine-chunk: 'file:./prismarine-chunk'
+  # digTime as the vanilla client takes it (float progress added up tick by tick, 26.3 fatigue, swords on bamboo)
+  prismarine-block: 'file:./prismarine-block'
+  # window types as vanilla's menu registry (1.19.4's legacy smithing, the four-slot smithing table), vanilla's clicks
+  prismarine-windows: 'file:./prismarine-windows'
+  # enchantments from 1.20.5+ components, the anvil's result as vanilla's AnvilMenu.createResult
+  prismarine-item: 'file:./prismarine-item'
+
+linkWorkspacePackages: true
+
+# minecraft-pathfinding builds on postinstall, before physics-utils has a dist; `pnpm build` builds both in order
+ignoreScripts: true
+
+# mineflayer-mouse (survival's tests, the web client's checkout) requires these without listing them
+packageExtensions:
+  mineflayer-mouse:
+    dependencies:
+      minecraft-data: '*'
+      prismarine-block: '*'
+      vec3: '*'
