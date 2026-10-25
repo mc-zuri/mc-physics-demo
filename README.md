@@ -10,7 +10,7 @@ submodule here, on its `mc-physics-demo` branch.
 Needs Node.js 22 or newer (with corepack) and git.
 
 ```sh
-git clone --recursive --shallow-submodules <this repository> mc-physics-demo
+git clone --recursive --shallow-submodules https://github.com/mc-zuri/mc-physics-demo
 cd mc-physics-demo
 npm run setup
 npm start
