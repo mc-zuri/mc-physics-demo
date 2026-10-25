@@ -1,2 +1,4 @@
 # build outputs copied byte for byte into the checkouts
 prebuilt/** -text
+# recorded sessions, gzipped
+fixtures/** -text

@@ -1,0 +1,15 @@
+{
+  "name": "java-math",
+  "version": "0.1.0",
+  "private": true,
+  "description": "java.lang.Math.sin and cos through JNI in an embedded JVM, for replaying the vanilla Java client bit for bit",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "node-gyp": "^12.4.0"
+  }
+}

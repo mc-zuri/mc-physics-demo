@@ -4,6 +4,9 @@ packages:
   - minecraft-pathfinding
   - mineflayer-survival
   - minecraft-data
+  # the replays of recorded vanilla sessions (fixtures/java) through mineflayer and its engines
+  - mineflayer-replay
+  - java-math
 
 # every package resolves the forks here instead of the published or github copies
 overrides:

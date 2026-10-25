@@ -7,6 +7,11 @@
     "setup": "node scripts/setup.mjs",
     "start": "corepack pnpm@10.32.1 --dir minecraft-web-client start",
     "build": "pnpm --filter @nxg-org/mineflayer-physics-util run build && pnpm --filter @nxg-org/mineflayer-pathfinder run build && pnpm --filter mineflayer-survival run build",
+    "test": "node scripts/test.mjs",
+    "test:gen": "node scripts/test.mjs gen",
+    "test:gen:native": "node scripts/test.mjs gen-native",
+    "test:native": "node scripts/test.mjs native",
+    "test:physics-utils": "node scripts/test.mjs physics-utils",
     "update-prebuilt": "node scripts/update-prebuilt.mjs"
   },
   "engines": {

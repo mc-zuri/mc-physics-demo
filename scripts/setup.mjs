@@ -1,26 +1,6 @@
-// Installs and builds what the web client takes from the forks next to it, then the web client itself.
-import { spawnSync } from 'node:child_process'
+// Installs and builds what the web client and the tests take from the forks here, then the web client itself.
 import fs from 'node:fs'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const at = (...parts) => path.join(root, ...parts)
-
-// (through the shell on Windows, where corepack is a .cmd: one command line, the arguments have no spaces)
-function run (dir, command, ...args) {
-  const line = [command, ...args].join(' ')
-  console.log(`\n> ${dir || '.'}: ${line}`)
-  const options = { cwd: at(dir), stdio: 'inherit' }
-  const result = process.platform === 'win32' ? spawnSync(line, { ...options, shell: true }) : spawnSync(command, args, options)
-  if (result.status !== 0) throw new Error(`${line} failed in ${dir || '.'}`)
-}
-
-// pnpm at the version the package pins (packageManager), else this repo's
-function pnpm (dir, ...args) {
-  const pinned = JSON.parse(fs.readFileSync(at(dir, 'package.json'), 'utf8')).packageManager?.split('+')[0]
-  run(dir, 'corepack', pinned ?? 'pnpm@11.13.0', ...args)
-}
+import { at, attempt, pnpm, pnpmArgs, run } from './run.mjs'
 
 run('', 'git', 'submodule', 'update', '--init', '--recursive')
 
@@ -35,11 +15,17 @@ pnpm('mineflayer-mouse', 'run', 'build')
 pnpm('minecraft-physics-native', 'install')
 pnpm('minecraft-physics-native', 'run', 'build')
 
-// mineflayer, mineflayer-physics-utils, minecraft-pathfinding, mineflayer-survival and minecraft-data (its data.js and
-// index.d.ts from its prepare script)
+// mineflayer, mineflayer-physics-utils, minecraft-pathfinding, mineflayer-survival, minecraft-data (its data.js and
+// index.d.ts from its prepare script), mineflayer-replay and java-math
 pnpm('', 'install')
 pnpm('', '--filter', 'minecraft-data', 'run', 'prepare')
 pnpm('', 'run', 'build')
+
+// Java's own sin and cos for the replays, which needs a JDK and a C++ toolchain; without it they use V8's, which can
+// miss Java's by one bit
+if (!attempt('', 'corepack', pnpmArgs('', '--filter', 'java-math', 'run', 'build'))) {
+  console.warn('\njava-math was not built: the replays use V8\'s sin and cos')
+}
 
 // the workers the web client copies from its dist
 pnpm('minecraft-renderer', 'install', '--ignore-workspace')
@@ -49,4 +35,4 @@ pnpm('minecraft-renderer', 'run', 'build:threeworker')
 pnpm('minecraft-web-client', 'install')
 pnpm('minecraft-web-client', 'run', 'prepare-project')
 
-console.log('\nDone: `npm start`, then open http://localhost:3000 (Options → Controls → Physics → Native Physics).')
+console.log('\nDone: `npm start`, then open http://localhost:3000 (Options → Controls → Physics → Native Physics); `npm test` for the tests.')

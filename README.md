@@ -50,6 +50,33 @@ The root is the pnpm workspace that builds mineflayer-physics-utils, minecraft-p
 against the other forks (`pnpm-workspace.yaml`); the web client, the renderer, mineflayer-mouse and the engine install
 on their own.
 
+`mineflayer-replay`, `java-math` and `fixtures/java` are not submodules: they are the test packages of the workspace
+these forks were developed in, kept here as they are there.
+
+## Tests
+
+```sh
+npm test                  # all of them
+npm run test:gen          # mineflayer-replay through mineflayer-physics-utils
+npm run test:gen:native   # mineflayer-replay through minecraft-physics-native
+npm run test:native       # minecraft-physics-native's own tests
+npm run test:physics-utils  # mineflayer-physics-utils' own tests
+```
+
+- **physics-utils**: mineflayer-physics-utils' own unit tests (boats, ridden mobs, the player's movement).
+
+- **gen**: mineflayer-replay replays every recorded vanilla Java client session in `fixtures/java` (30 releases,
+  1.8.8 to 26.3) tick by tick, through mineflayer-physics-utils' engines and through a whole mineflayer bot, and
+  compares each tick with vanilla's exactly.
+- **gen-native**: the same replays with `REPLAY_ENGINE=native`: the engine layer through minecraft-physics-native's
+  mineflayer adapter, the bot with mineflayer's `nativePhysics` option, on the engine's WebAssembly build when no
+  native addon is built.
+- **native**: minecraft-physics-native's own tests (`pnpm test`), and its Rust tests (`cargo test --release`) when cargo
+  is on the PATH.
+
+Setup builds `java-math` (Java's own `Math.sin` and `Math.cos` through JNI) when it finds a JDK and a C++ toolchain;
+without it the replays use V8's, which can miss Java's by one bit.
+
 ## Prebuilt
 
 Two builds a clone cannot make are kept in `prebuilt/`, and setup copies them into their folders:
