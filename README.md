@@ -23,6 +23,9 @@ connect; in the browser console `bot.physicsEngine.constructor.name` is `NativeP
 `npm run setup` installs and builds every folder the client takes from, in order (`scripts/setup.mjs`), each with the
 pnpm version it pins.
 
+On Windows, clone into a short path (such as `C:\mc-physics-demo`): the web client's install goes past Windows'
+260-character path limit from deep folders (`ENAMETOOLONG`).
+
 ## Folders
 
 | folder | fork | upstream |
