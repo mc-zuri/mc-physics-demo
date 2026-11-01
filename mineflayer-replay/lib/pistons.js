@@ -20,6 +20,9 @@ function createPistons (version, world) {
   const registry = registryFor(version)
   const Block = require('prismarine-block')(registry)
   const legacy = registry.isOlderThan('1.13')
+  // getCollisionRelatedBlockState sets the head's SHORT from 1.16; 1.13 - 1.15 keep it false, the long arm (1.15
+  // PistonBlockEntity.java:90-97, 1.16 :92-100)
+  const shortens = !registry.isOlderThan('1.16')
   const deserializer = mc.createDeserializer({ state: 'play', isServer: false, version })
   const moving = new Map()
   const key = ([x, y, z]) => `${x},${y},${z}`
@@ -89,9 +92,9 @@ function createPistons (version, world) {
     // ends too (before 1.11 that pushes once more)
     tick (push) {
       for (const entity of [...moving.values()]) {
-        // getCollisionRelatedBlockState: a retracting base collides as the head, short past a quarter
+        // getCollisionRelatedBlockState: a retracting base collides as the head, short past a quarter from 1.16
         const collision = !entity.extending && entity.source
-          ? head(entity.facing, entity.sticky, entity.progress > Math.fround(0.25))
+          ? head(entity.facing, entity.sticky, shortens && entity.progress > Math.fround(0.25))
           : entity.movedState
         push({ pos: entity.pos, direction: DIRECTIONS[entity.facing], extending: entity.extending, source: entity.source, progress: entity.progress, shapes: shapesOf(collision) })
         if (entity.progress >= 1) finish(entity)

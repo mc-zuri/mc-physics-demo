@@ -284,6 +284,9 @@ function useEntities (bot, start) {
     // the packet position the server's relative moves add to, as its spawn left it (Entity.recreateFromPacket)
     bot.entityInterpolation?.spawn(entity)
   }
+  // and in the level's entity map after the player (1.14 - 1.16 tick its slots in order), in id order: the recording
+  // has no history of the spawns and removals that placed them (as engine.js's tickOrder takes them)
+  for (const id of (start.entities ?? []).map(e => e.id).sort((a, b) => a - b)) bot._entityTickOrder?.add(id)
 }
 
 // A mob's head and body rotation as the recording has them (yHeadRot, yBodyRot), its body settled: the head stable for

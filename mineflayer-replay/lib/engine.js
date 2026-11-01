@@ -7,6 +7,7 @@
 //   mode 'stepwise':   every tick starts from vanilla's state after the tick before, so each tick's error is its own.
 const { Vec3 } = require('vec3')
 const conv = require('mineflayer/lib/conversions')
+const { createEntityTickOrder } = require('mineflayer/lib/entityTickOrder')
 const { BotcraftPhysics, EPhysicsCtx, PhysicsWorldSettings, ControlStateHandler, initSetup } = require('@nxg-org/mineflayer-physics-util')
 const { applyMdToNewEntity, CheapEffects } = require('@nxg-org/mineflayer-physics-util/dist/util/physicsUtils')
 const { extractAttribute } = require('@nxg-org/mineflayer-physics-util/dist/physics/engines/botcraft')
@@ -143,27 +144,19 @@ function attachedRockets (registry, row) {
 }
 
 // The client's entity tick order: the ids of the row's entities in the order they tick, and those that tick before
-// the player. 1.14 - 1.16 tick the entities of an Int2ObjectOpenHashMap (fastutil, 32 slots for a few entities,
-// linear probing, filled in id order) from the last slot down, so an entity whose id lands in a higher slot than the
-// player's ticks first; before 1.14 the entity list and since 1.17 EntityTickList keep the order they were added in,
-// the player first.
+// the player. 1.14 - 1.16 tick the entities of a fastutil Int2ObjectOpenHashMap from the last slot down
+// (mineflayer's lib/entityTickOrder.js: its rehash on the 25th entry, linear probing), so an entity whose id lands in
+// a higher slot than the player's ticks first; the row has no history of the level's spawns and removals, so the map
+// is taken as filled with the player and then the entities in id order. Before 1.14 the entity list and since 1.17
+// EntityTickList keep the order they were added in, the player first.
 function tickOrder (registry, row) {
   const ids = (row.entities ?? []).map(e => e.id)
   const playerId = row.netState?.entityId
   if (!ids.length || playerId == null || registry.version['<']('1.14') || registry.version['>=']('1.17')) return { order: ids, first: new Set() }
-  let n = 32
-  while (ids.length + 1 >= n * 0.75) n *= 2
-  const slots = new Map()
-  const taken = new Set()
-  for (const id of [playerId, ...[...ids].sort((a, b) => a - b)]) {
-    const h = Math.imul(id, 0x9E3779B9 | 0)
-    let pos = (h ^ (h >>> 16)) & (n - 1)
-    while (taken.has(pos)) pos = (pos + 1) & (n - 1)
-    taken.add(pos)
-    slots.set(id, pos)
-  }
-  const order = [...ids].sort((a, b) => slots.get(b) - slots.get(a))
-  return { order, first: new Set(ids.filter(id => slots.get(id) > slots.get(playerId))) }
+  const map = createEntityTickOrder()
+  for (const id of [playerId, ...[...ids].sort((a, b) => a - b)]) map.add(id)
+  const order = [...ids].sort((a, b) => map.slotOf(b) - map.slotOf(a))
+  return { order, first: new Set(ids.filter(id => map.ticksBefore(id, playerId))) }
 }
 
 // How many of the row's rockets the client ticks before the player: they boost it before its own tick.

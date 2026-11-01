@@ -367,7 +367,9 @@ function replayVehicle (version, rec, options = {}) {
   const clientMoves = registryFor(version).version['>=']('1.9')
   if (clientMoves && ((RIDDEN_MOBS.has(type) && !unsteered) || steeredLlama(version, type))) return replayRiddenMob(version, rec, { mode })
   if (!clientMoves && RIDDEN_MOBS.has(type)) return replayMinecart(version, rec, { mode, living: true })
-  // before 1.11 a pig is its first passenger's to move without its stick too (canPassengerSteer), unsteered
+  // before 1.11 a pig is its first passenger's to move without its stick too (canPassengerSteer), unsteered; from 1.11
+  // to 1.18 Mob.canPassengerSteer also asks canBeSteered, the stick (1.11.2 MobEntity.java:1087-1089, 1.12.2 :1083-1084,
+  // 1.18 :1273-1275), so the server moves it
   if (STICKS[type] && unsteered && registryFor(version).version['<']('1.11')) return replayRiddenMob(version, rec, { mode, steered: false })
   if (isMinecart(type) || type === 'cushion') return replayMinecart(version, rec, { mode })
   if (SERVER_DRIVEN_MOBS.has(type) || unsteered) return replayMinecart(version, rec, { mode, living: true })

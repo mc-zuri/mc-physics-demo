@@ -37,4 +37,24 @@ describe('engine replay pistons', function () {
     assert.deepStrictEqual(seen, [0, 0.5, 1])
     assert.strictEqual(world.getBlock({ x: 0, y: 101, z: 2707 }).name, 'piston_head')
   })
+
+  // getCollisionRelatedBlockState: a retracting base collides as the head, short past a quarter from 1.16 (1.16
+  // PistonBlockEntity.java:92-100); 1.13 - 1.15 set no SHORT, the long arm reaching -0.25 (1.15 :90-97)
+  it('collides a retracting base as the short head past a quarter only from 1.16', function () {
+    const mc = require('minecraft-protocol')
+    const armStarts = version => {
+      const registry = require('prismarine-registry')(version)
+      const serializer = mc.createSerializer({ state: 'play', isServer: true, version })
+      const params = { location: { x: -1, y: 101, z: 2707 }, byte1: 1, byte2: 5, blockId: registry.blocksByName.piston.id }
+      const bytes = serializer.createPacketBuffer({ name: 'block_action', params }).toString('hex')
+      const pistons = createPistons(version, { setStateId () {}, setBlock () {} })
+      pistons.receive([{ type: 'minecraft:block_event', bytes }])
+      const seen = []
+      for (let i = 0; i < 2; i++) pistons.tick(piston => seen.push(Math.min(...piston.shapes.map(([minX]) => minX))))
+      return seen
+    }
+    assert.deepStrictEqual(armStarts('1.13.2'), [-0.25, -0.25])
+    assert.deepStrictEqual(armStarts('1.15.2'), [-0.25, -0.25])
+    assert.deepStrictEqual(armStarts('1.16.5'), [-0.25, 0])
+  })
 })

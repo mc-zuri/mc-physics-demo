@@ -78,6 +78,14 @@ describe('vehicle replay', function () {
       if (result) assert.deepStrictEqual(result.divergences, [], version)
     }
   })
+  // 1.11 - 1.18's Mob.canPassengerSteer is canBeSteered (the stick) && Entity's (1.11.2 MobEntity.java:1087-1089, 1.18
+  // :1273-1275): the stickless pig is the server's to move, as the recordings show (its motion 0, never on the ground)
+  it("follows the server's stickless pig from 1.11 to 1.18 (c_ride_pig_dismount)", function () {
+    for (const version of ['1.11.2', '1.12.2', '1.13.2', '1.14.4', '1.15.2', '1.16.5', '1.17.1', '1.18.2']) {
+      const result = replayed(version, 'c_ride_pig_dismount')
+      if (result) assert.deepStrictEqual(result.divergences, [], version)
+    }
+  })
   // 1.8's client runs the boat its player rides itself (EntityBoat.onUpdate), pushed by its rider's walk input, and
   // takes the server's motion for it (S12PacketEntityVelocity, setVelocity) before its tick
   it("runs 1.8's boat by its rider's input and the server's motion for it (v_boat_ice, v_boat_ice_turning, v_boat_off_ledge_into_water, v_boat_dismount on 1.8.8)", function () {
